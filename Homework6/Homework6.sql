@@ -60,14 +60,14 @@ CREATE PROCEDURE dbo.sp_CreateGradeDetail (
     @GradePoints DECIMAL(10, 2) OUTPUT)
 AS
 BEGIN
-    /*
-        Created by: Nikola Ilievski
-        Created date: 31.05.2023
+	/*
+		Created by: Nikola Ilievski
+		Created date: 31.05.2023
 		Ticket Number: 421
-        Description:
-            - Add details for a specific grade, 
-            - Calculate the grade points based on the formula.
-    */
+		Description:
+			- Add details for a specific grade, 
+			- Calculate the grade points based on the formula.
+	*/
 
     INSERT INTO GradeDetails (GradeID, AchievementTypeID, AchievementPoints, AchievementMaxPoints, AchievementDate)
     VALUES (@GradeID, @AchievementTypeID, @AchievementPoints, @AchievementMaxPoints, @AchievementDate);
